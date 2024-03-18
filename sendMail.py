@@ -43,11 +43,8 @@ def sendMailByType(niddType):
         folder=account.sent,
         subject=niddType + u' definitions - Daily extraction from NIDD',
         body=HTMLBody(htmlContent),
-        to_recipients=[Mailbox(email_address='lemon.1.lin@nokia-sbell.com'),
-                       Mailbox(email_address='jinghuan.liu@nokia-sbell.com'),
-                       Mailbox(email_address='hui.6.li@nokia-sbell.com'),
-                       Mailbox(email_address='yujuan.gao@nokia-sbell.com'),
-                       Mailbox(email_address='mengna.huang@nokia-sbell.com')]
+        to_recipients=[Mailbox(email_address='lemonmengtr@163.com'),
+                       Mailbox(email_address='XXX@qq.com')]
     )
     message.send_and_save()
 
